@@ -18,37 +18,37 @@
         <h1 class="titulo">Tienda patitas 🐾</h1>
     </header>
 
-    <main class="container my-5">
+    <main class="container my-4"> <!-- 🔽 bajé margen -->
         <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <form class="formulario sombra p-4">
+            <div class="col-md-7 col-lg-5"> <!-- 🔽 más compacto -->
+                <form class="formulario sombra p-3"> <!-- 🔽 menos padding -->
                     <fieldset class="border-0">
-                        <legend class="text-center mb-4" style="font-family: 'Lilita One', sans-serif; font-size: 2.8rem;">
+                        <legend class="text-center mb-3 titulo-formulario">
                             Contáctanos llenando todos los campos
                         </legend>
                         
-                        <div class="mb-3">
-                            <label class="form-label fw-bold" style="font-size: 1.8rem;">Nombre</label>
-                            <input class="form-control input-text" type="text" placeholder="Escribe tu nombre">
+                        <div class="campo">
+                            <label class="form-label fw-bold">Nombre</label>
+                            <input class="form-control form-control-sm input-text" type="text" placeholder="Escribe tu nombre">
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label fw-bold" style="font-size: 1.8rem;">Teléfono</label>
-                            <input class="form-control input-text" type="tel" placeholder="Escribe tu teléfono">
+                        <div class="campo">
+                            <label class="form-label fw-bold">Teléfono</label>
+                            <input class="form-control form-control-sm input-text" type="tel" placeholder="Escribe tu teléfono">
                         </div>
 
-                        <div class="mb-3">
-                            <label class="form-label fw-bold" style="font-size: 1.8rem;">Correo</label>
-                            <input class="form-control input-text" type="email" placeholder="Escribe tu email">
+                        <div class="campo">
+                            <label class="form-label fw-bold">Correo</label>
+                            <input class="form-control form-control-sm input-text" type="email" placeholder="Escribe tu email">
                         </div>
 
-                        <div class="mb-4">
-                            <label class="form-label fw-bold" style="font-size: 1.8rem;">Mensaje</label>
-                            <textarea class="form-control input-text" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+                        <div class="campo">
+                            <label class="form-label fw-bold">Mensaje</label>
+                            <textarea class="form-control form-control-sm input-text" rows="3" placeholder="¿En qué podemos ayudarte?"></textarea>
                         </div>
 
-                        <div class="text-center">
-                            <input class="boton w-100" type="submit" value="Enviar">
+                        <div>
+                            <input class="boton" type="submit" value="Enviar">
                         </div>
                     </fieldset>
                 </form>
@@ -56,7 +56,7 @@
         </div>
     </main>
 
-    <footer class="text-center py-4">
+    <footer class="text-center py-3">
         <p class="m-0">Todos los derechos reservados. Maria Fernanda Bautista Barrientos</p>
     </footer>
 

@@ -2,6 +2,7 @@ html {
     font-size: 62.5% !important; 
 }
 
+/* VARIABLES */
 :root {
     --blanco: #ffffff;
     --negro: #212121;
@@ -11,15 +12,22 @@ html {
     --gris-formulario: #f0f0f0; 
 }
 
+/* GENERALES */
 body {
     font-size: 16px;
     font-family: 'Krub', sans-serif;
     background-color: yellowgreen; 
 }
 
-@media(min-width: 400px) { body { background-color: plum; } }
-@media(min-width: 768px) { body { background-color: rgb(206, 126, 126); } }
+@media(min-width: 400px) { 
+    body { background-color: plum; } 
+}
 
+@media(min-width: 768px) { 
+    body { background-color: rgb(206, 126, 126); } 
+}
+
+/* TITULOS */
 .titulo {
     text-align: center;
     font-size: 4.5rem;
@@ -30,23 +38,40 @@ body {
     font-size: 2rem;
 }
 
+/* NAV */
 .nav-bg {
     background-color: var(--gris);
 }
 
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .navegacion-principal a {
-    font-size: 2rem !important;
-    color: var(--blanco) !important;
+    font-size: 2rem;
+    color: var(--blanco);
     text-decoration: none;
     font-weight: 700;
-    padding: 1rem 2rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 .navegacion-principal a:hover {
     background-color: var(--primario);
-    color: var(--negro) !important;
+    color: var(--negro);
 }
 
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* HERO */
 .mascota {
     background-image: url(mascota.jpg);
     background-repeat: no-repeat;
@@ -61,12 +86,22 @@ body {
     height: 100%;
 }
 
+/* CONTENEDOR TIENDA MÁS AMPLIO */
+.container.sombra {
+    padding: 4rem;
+    max-width: 110rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* SOMBRA */
 .sombra {
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
     background-color: var(--blanco);
     border-radius: 1rem;
 }
 
+/* SERVICIOS */
 .servicio .iconos {
     height: 15rem;
     width: 15rem;
@@ -81,20 +116,41 @@ body {
     font-size: 1.8rem;
 }
 
+/* ===== FORMULARIO ===== */
+
 .formulario {
-    background-color: var(--blanco);
+    background-color: var(--gris) !important;
     border-radius: 1rem;
+    padding: 3rem;
+}
+
+/* CAMPOS */
+.campo {
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+    font-size: 1.8rem;
+}
+
+/* INPUTS */
+.form-control {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
 }
 
 .input-text {
-    background-color: var(--gris-formulario) !important; 
-    border: 1px solid #ced4da;
-    font-size: 1.6rem;
-    padding: 1.2rem;
-    border-radius: 0.5rem;
+    background-color: var(--gris-formulario) !important;
     color: var(--negro);
 }
 
+/* FOCUS */
 .input-text:focus {
     background-color: #e9ecef !important;
     border-color: #ae2eae;
@@ -102,11 +158,19 @@ body {
     outline: none;
 }
 
+/* TITULO FORMULARIO */
+.titulo-formulario {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2.3rem;
+    color:purple;
+}
+
+/* BOTON */
 .boton {
-    background-color: rgb(174, 46, 174);
-    color: var(--blanco);
-    padding: 1.2rem 4rem;
-    font-size: 2rem;
+    background-color: rgb(174, 46, 174) !important;
+    color: var(--blanco) !important;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -114,14 +178,14 @@ body {
     border: none;
     display: inline-block;
     cursor: pointer;
-    transition: background-color .3s ease;
+    width: auto;
 }
 
 .boton:hover {
     background-color: rgb(140, 36, 140);
-    color: white;
 }
 
+/* FOOTER */
 footer p {
     font-size: 1.4rem;
     color: var(--negro);
